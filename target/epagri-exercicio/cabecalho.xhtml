@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Teste</title>
+	<link rel="Stylesheet" type="text/css" href="css/style.css"
+		media="screen"></link>
+</h:head>
+<h:body>
+	<div class="row theme-header-title headerColor fixed-top">
+			<!-- Logo -->
+			<div class="col-3" id="headerLogo">
+				<a href="#" title="EPAGRI"><img class="p-1 pl-2"
+					src="https://treinamento.epagri.sc.gov.br/safi/assets/img/logo.png"
+					alt="Logo" /></a>
+			</div>
+
+			<!-- Title -->
+			<div class="col-6 pt-2 titleSize text-center" id="headerTitle">
+				<img class="logoHouse"
+					src="http://www.clker.com/cliparts/P/h/C/i/5/Z/small-house-md.png"
+					alt="house" id="house"></img> <span class="cursorPadrao">Projeto
+					EPAGRI</span>
+			</div>
+
+			<!-- Login -->
+			<div class="col-3 text-right pr-2 loginSize pt-1" id="headerlogin">
+				<h:form>
+					<span id="nomeUsu" class="pr-2 cursorPadrao">Filipe Eduardo
+						Regis</span>
+
+					<p:growl id="growl" life="2000" />
+
+					<p:commandButton value="" id="dynaButton" update="growl"
+						action="#{buttonView.buttonAction}" style="margin-right:20px;"
+						styleClass="ui-priority-primary imagem rounded-circle" />
+
+					<p:menu overlay="true" trigger="dynaButton" my="left top"
+						at="left bottom" class="float-right">
+						<p:menuitem value="Perfil" action="#{menuView.save}"
+							icon="pi pi-save" />
+						<p:menuitem value="Sair" action="#{menuView.update}"
+							icon="pi pi-refresh" />
+					</p:menu>
+				</h:form>
+			</div>
+		</div>
+</h:body>
+</html>

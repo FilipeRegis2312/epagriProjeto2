@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Teste</title>
+	<link rel="Stylesheet" type="text/css" href="css/style.css"
+		media="screen"></link>
+</h:head>
+<h:body>
+	<div id="menu" class="col-2 border-right menu position-fixed">
+			<h:form>
+				<p:growl>
+					<p:autoUpdate />
+				</p:growl>
+
+				<p:panelMenu styleClass="ui-panelmenu ui-widget" style="width:100%;">
+					<p:submenu styleClass="menuFont ui-panelmenu-header"
+						label="Açao Orçamentaria">
+						<p:menuitem value="Pesquisa" action="#{menuView.save}"
+							icon="pi pi-save" />
+						<p:menuitem value="Cadastrar" action="#{menuView.save}"
+							icon="pi pi-save" />
+						<p:menuitem value="Alterar" action="#{menuView.update}"
+							icon="pi pi-refresh" />
+						<p:menuitem value="Excluir" action="#{menuView.update}"
+							icon="pi pi-refresh" />
+					</p:submenu>
+				</p:panelMenu>
+			</h:form>
+		</div>
+</h:body>
+</html>
