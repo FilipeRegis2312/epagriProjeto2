@@ -61,7 +61,7 @@ public class BaseDao<T> {
 	}
 
 	public static void main(String[] args) {
-
+/*
 		BaseDao dao = new BaseDao();
 		System.out.println("aaaa");
 
@@ -70,13 +70,6 @@ public class BaseDao<T> {
 
 		aO.setCdAcaoorc(656897);
 
-		aDao.insert(aO);
-
-		List<AcaoOrcamentaria> lista = aDao.lista();
-
-		for (AcaoOrcamentaria object : lista) {
-			System.out.println(object.getDsAcaoorc());
-		}
-
+		aDao.insert(aO);*/
 	}
 }

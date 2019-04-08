@@ -14,6 +14,9 @@ html{
 	border-top: 3px solid #c9302c !important;
 }
 
+.display-none{
+	display: none;
+}
 
 .theme-header-title {
 	height: 63px;
@@ -81,6 +84,7 @@ html{
 
 .principal{
 	padding-top: 63px;
+	padding-bottom: 80px;
 }
 
 .imagem{

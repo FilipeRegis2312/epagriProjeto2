@@ -13,19 +13,31 @@
 <h:body>
 	<div class="col-12 conteudo pr-3">
 		<h:form>
-			<p:outputLabel value=""></p:outputLabel>
-			<p:dataTable var="acao" value="#{acaoOrcamentariaBean.lista}" styleClass="">
+			<h:panelGrid columns="3">
+				<p:inputText placeholder="Pesquisa" id="i1"></p:inputText>
+				<p:commandButton value="Consultar"
+					action="#{acaoOrcamentariaBean.lista}">
+				</p:commandButton>
+			</h:panelGrid>
+			<p:dataTable styleClass="table-striped" var="acao"
+				value="#{acaoOrcamentariaBean.dataModel}" border="1" cellpading="2"
+				cellspacing="0" paginator="true" paginatorPosition="top"
+				paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+				rows="10" id="tb1" reflow="true" lazy="true" rendered="true">
 				<p:column headerText="Codigo">
 					<h:outputText value="#{acao.cdAcaoorc}" />
 				</p:column>
-				<p:column headerText="Descricao" styleClass="text-center">
+				<p:column headerText="Descricao" styleClass="text-justify">
 					<h:outputText value="#{acao.dsAcaoorc}" />
 				</p:column>
-				<p:column headerText="Numero" styleClass="text-center">
+				<p:column headerText="Numero">
 					<h:outputText value="#{acao.nrAcaoorc}" />
 				</p:column>
 				<p:column styleClass="text-center">
-					<p:button value="Deletar"></p:button>
+					<p:commandButton styleClass="btn btn-primary"
+						action="#{acaoOrcamentariaBean.excluir(acao)}" value="Deletar"
+						title="Deletar">
+					</p:commandButton>
 				</p:column>
 				<p:column styleClass="text-center">
 					<p:button value="Alterar"></p:button>

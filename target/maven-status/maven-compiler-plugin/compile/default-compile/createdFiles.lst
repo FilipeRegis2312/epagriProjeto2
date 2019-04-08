@@ -1,5 +1,7 @@
 br\gov\sc\epagri\entity\AcaoOrcamentaria.class
 br\gov\sc\epagri\dao\AcaoOrcamentariaDao.class
-br\gov\sc\epagri\bean\AcaoOrcamentariaBean.class
+br\gov\sc\epagri\bean\LazyView.class
 br\gov\sc\epagri\jpautil\JPAUtil.class
+br\gov\sc\epagri\bean\AcaoOrcamentariaBean$1.class
+br\gov\sc\epagri\bean\AcaoOrcamentariaBean.class
 br\gov\sc\epagri\dao\BaseDao.class
